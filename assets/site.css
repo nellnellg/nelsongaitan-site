@@ -268,3 +268,7 @@ a.tile { display: block; text-decoration: none; color: var(--ink); }
 .convo--lg .bubble-mo, .convo--lg .bubble-me { font-size: 16px; }
 a.tile.stack { display: flex; }
 .tile > .tags { margin-top: 4px; }
+
+/* Header monogram */
+.monogram { width: 42px; height: 42px; border-radius: 12px; background: var(--charcoal); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 14px; font-weight: 700; letter-spacing: 0.02em; flex: 0 0 auto; box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 3px 0 #111110, 0 5px 10px rgba(0,0,0,0.15); transition: transform 80ms ease, box-shadow 80ms ease; }
+.brand:active .monogram { transform: translateY(2px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 1px 0 #111110; }
