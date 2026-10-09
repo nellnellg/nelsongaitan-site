@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mo · Nelson Gaitan</title>
+<meta name="description" content="Case study: Mo, an independent AI running partner that checks your shoe rotation and recommends what to buy next.">
+<meta property="og:title" content="Mo · Nelson Gaitan">
+<meta property="og:image" content="https://nelsongaitan.com/assets/img/og-image.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=VT323&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="bar">
+    <a class="brand" href="../">
+      <img src="../assets/img/nelson-portrait.jpg" alt="" width="42" height="42">
+      <span><span class="brand-name">Nelson Gaitan</span><br><span class="brand-role">PRODUCT DESIGNER</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="key" href="../#work" aria-current="page">Work</a>
+      <a class="key" href="../about.html">About</a>
+      <a class="key" href="../brain-grace.html">Notes</a>
+      <a class="key" href="../#contact">Contact</a>
+    </nav>
+  </header>
+
+  <a class="key back" href="../#work">← All work</a>
+
+  <main class="grid">
+
+    <section class="tile tile--dark tile--pad-lg wfull" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+      <div class="stack" style="flex: 2 1 480px; min-width: 0; gap: 20px">
+        <div class="label label--yellow">Case study 03 · Personal project · 2026</div>
+        <h1 class="h1" style="color: var(--on-dark)">Mo, a running partner that helps you choose your next shoe</h1>
+        <p class="lead" style="color: #CFCCC4">There are hundreds of running shoes, but most shopping tools still answer with a long list of results. Runners end up comparing specs, prices and reviews on their own. Mo is an independent AI running partner. A store knows its catalog, but Mo knows the runner.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="key key--big key--yellow" href="https://nellnellg.github.io/mo-running-partner/" target="_blank" rel="noopener">Try the live prototype ↗</a>
+        </div>
+      </div>
+      <div class="phone" aria-hidden="true" style="transform: rotate(3deg)">
+        <div class="phone-screen">
+          <div class="phone-notch"></div>
+          <div class="mo-head"><svg width="28" height="34" viewBox="0 0 120 150"><ellipse cx="42" cy="38" rx="12" ry="34" fill="#F26B3A" transform="rotate(-10 42 38)"/><ellipse cx="80" cy="34" rx="12" ry="34" fill="#F26B3A" transform="rotate(14 80 34)"/><circle cx="60" cy="100" r="46" fill="#F26B3A"/><circle cx="46" cy="94" r="6" fill="#2B1A12"/><circle cx="74" cy="94" r="6" fill="#2B1A12"/></svg>Mo</div>
+          <div class="mo-msg">Welcome back! Your Cloudsurfer Max is probably due for a replacement.</div>
+          <div class="mo-msg">Want me to find a few options that fit your rotation?</div>
+          <div class="mo-me">Yes, under $200</div>
+          <div class="mo-card"><div class="mo-card-k">YOUR PICK</div><div class="mo-card-t">1 top pick, 2 alternates</div><div class="mo-card-b">Choose this one</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tile wfull">
+      <div class="meta">
+        <div><div class="meta-k">Role</div><div class="meta-v">Product Designer, design and build</div></div>
+        <div><div class="meta-k">Type</div><div class="meta-v">Personal project</div></div>
+        <div><div class="meta-k">Built with</div><div class="meta-v">Claude Haiku 4.5, Supabase, GitHub Pages</div></div>
+        <div><div class="meta-k">Status</div><div class="meta-v"><span class="status" style="font-size: 12px; color: var(--ink)"><span class="led led--on"></span>Live prototype</span></div></div>
+      </div>
+    </section>
+
+    <section class="tile wfull">
+      <div class="label" style="margin-bottom: 18px">At a glance</div>
+      <div class="points">
+        <div class="point"><h4>The problem</h4><p>Runners don't need more search results. They need to know which shoe to buy next, and whether they need one at all.</p></div>
+        <div class="point"><h4>The shift</h4><p>An agent, not an advisor. Mo speaks up first, checks the rotation, narrows it down, and points to a store.</p></div>
+        <div class="point"><h4>The result</h4><p>A live prototype where the model chooses three picks and explains each one. <span class="ask">[ASK: anything from testing with runners]</span></p></div>
+      </div>
+    </section>
+
+    <section class="tile wfull section">
+      <div class="section-side"><div class="section-num">01</div><div class="label" style="margin-top: 8px">The challenge</div></div>
+      <div class="section-main">
+        <h2 class="h2">Runners don't need more results, they need a decision</h2>
+        <p class="body">Most runners keep a rotation: one shoe for easy runs, one for speed workouts and one for race day. So the real question isn't only which shoe is good, it's which shoe they need next.</p>
+        <p class="body">Today that decision falls on the runner. Lots of options, confusing specs and not knowing when to replace a shoe make it easy to buy the wrong thing, or to put off buying anything.</p>
+        <p class="body">Mo is for the intermediate runner training for a half or full marathon, with two or three shoes in rotation, at the moment they want something new: their usual model changed or sold out, or they're curious about another brand.</p>
+      </div>
+    </section>
+
+    <section class="tile wfull section">
+      <div class="section-side"><div class="section-num">02</div><div class="label" style="margin-top: 8px">The approach</div></div>
+      <div class="section-main">
+        <h2 class="h2">The best shoe buying help is a good human in a running shop</h2>
+        <p class="body">Mo is that, without the shop. It isn't owned by a store, so it's on the runner's side. I summed up the positioning as taste plus safety: taste gets the runner to open it, safety is why they trust the pick.</p>
+        <div class="flow"><span class="tag">Intake</span><span class="flow-arrow">→</span><span class="tag">Rotation check</span><span class="flow-arrow">→</span><span class="tag">One clarifying question</span><span class="flow-arrow">→</span><span class="tag">Three picks</span><span class="flow-arrow">→</span><span class="tag">Refine</span></div>
+      </div>
+    </section>
+
+    <section class="tile wfull section">
+      <div class="section-side"><div class="section-num">03</div><div class="label" style="margin-top: 8px">Key decision 1</div></div>
+      <div class="section-main">
+        <h2 class="h2">Check the rotation before recommending anything</h2>
+        <div class="compare">
+          <div class="compare-card compare-before"><div class="compare-k"><span class="led"></span>Typical tools</div><p>Recommend a good shoe, even if it does the same job as one the runner already owns.</p></div>
+          <div class="compare-card compare-after"><div class="compare-k"><span class="led led--on"></span>Mo</div><p>Starts with the shoes the runner owns, notices a missing shoe type, and says so once. If there's no gap, Mo says that too.</p></div>
+        </div>
+        <div class="why"><b>WHY IT MATTERED</b><span>A partner that sometimes says "you don't need one yet" is easier to trust when it does recommend something.</span></div>
+      </div>
+    </section>
+
+    <section class="tile wfull section">
+      <div class="section-side"><div class="section-num">04</div><div class="label" style="margin-top: 8px">Key decision 2</div></div>
+      <div class="section-main">
+        <h2 class="h2">Three picks, not a list</h2>
+        <div class="compare">
+          <div class="compare-card compare-before"><div class="compare-k"><span class="led"></span>Typical tools</div><p>Dozens of results, and the runner still has to do the comparing.</p></div>
+          <div class="compare-card compare-after"><div class="compare-k"><span class="led led--on"></span>Mo</div><p>One top pick and two alternates, each with the price, what it's for, and why it fits this runner's rotation.</p></div>
+        </div>
+        <div class="why"><b>WHY IT MATTERED</b><span>The runner gets a decision they can act on, not more research to do.</span></div>
+      </div>
+    </section>
+
+    <section class="tile wfull section">
+      <div class="section-side"><div class="section-num">05</div><div class="label" style="margin-top: 8px">Key decision 3</div></div>
+      <div class="section-main">
+        <h2 class="h2">Ask in three taps instead of connecting Strava</h2>
+        <div class="compare">
+          <div class="compare-card compare-before"><div class="compare-k"><span class="led"></span>The first plan</div><p>Connect Strava or Garmin to read mileage automatically.</p></div>
+          <div class="compare-card compare-after"><div class="compare-k"><span class="led led--on"></span>What shipped</div><p>The runner adds their shoes in three taps and a rough mileage once. Mo estimates forward and says "probably" when it guesses.</p></div>
+        </div>
+        <div class="why"><b>WHY IT MATTERED</b><span>Strava's June 2026 API policy bans using its data in AI applications, and Garmin's developer program is paused for new applicants. Designing around it made Mo simpler and more honest about what it knows.</span></div>
+      </div>
+    </section>
+
+    <section class="tile wfull section">
+      <div class="section-side"><div class="section-num">06</div><div class="label" style="margin-top: 8px">Where it stands</div></div>
+      <div class="section-main">
+        <h2 class="h2">A live prototype with a real model behind the picks</h2>
+        <div class="points">
+          <div class="point"><h4>Model-chosen picks</h4><p>Claude Haiku 4.5 chooses the picks and writes the reason on each card. Scripted picks step in if the call fails.</p></div>
+          <div class="point"><h4>Remembers the runner</h4><p>The rotation is saved in the browser. Mo opens with "Welcome back" and names the shoe that's probably due.</p></div>
+          <div class="point"><h4>Around the run</h4><p>A race question with a countdown, and a store finder by ZIP code. Mo can't see stock, so it says to call ahead.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tile tile--dark wfull stack" style="gap: 24px; padding: 44px">
+      <div class="label label--yellow">What I learned</div>
+      <p class="quote" style="color: var(--on-dark)"><span class="ask">[ASK: the one line you'd want a hiring manager to remember]</span></p>
+      <p class="body" style="color: #CFCCC4"><span class="ask">[ASK: what did you learn designing and building Mo?]</span></p>
+    </section>
+
+    <section class="tile tile--paper w2">
+      <div class="label">Where Mo goes next</div>
+      <p class="body" style="margin-top: 14px">Test the recommendations with intermediate runners, add more tempo shoes to the catalog, and let runners add a shoe from a photo. After shoes, Mo can grow into training plans, tips, and gear beyond shoes.</p>
+    </section>
+
+    <a class="tile tile--lift w1 next" href="guest-hub.html">
+      <div><div class="label">Back to the start</div><div class="next-t" style="margin-top: 8px">Guest Hub</div></div>
+      <span class="arrow-key" aria-hidden="true">→</span>
+    </a>
+
+  </main>
+
+  <footer class="footer"><span>© 2026 Nelson Gaitan</span><a href="../#contact" style="color: inherit">Get in touch</a></footer>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>
