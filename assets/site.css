@@ -266,3 +266,4 @@ a.tile { display: block; text-decoration: none; color: var(--ink); }
 .bubble-card p { margin: 8px 0 0; font-size: 14px; line-height: 1.45; }
 .tile--lift:hover .bubble-mo, .tile--lift:hover .bubble-me, .tile--lift:hover .bubble-card { transform: rotate(0deg); }
 .convo--lg .bubble-mo, .convo--lg .bubble-me { font-size: 16px; }
+a.tile.stack { display: flex; }
