@@ -254,3 +254,15 @@ a.tile { display: block; text-decoration: none; color: var(--ink); }
 .key--mo { background: #F26B3A; color: #2B1A12; border-color: #C24E22; box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 4px 0 #C24E22, 0 8px 14px rgba(0,0,0,0.2); }
 .key--mo:hover { color: #2B1A12; }
 .key--mo:active { box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 0 #C24E22; }
+
+/* Mo as a conversation (no device) */
+.convo { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 8px 4px; }
+.convo-row { display: flex; align-items: flex-end; gap: 10px; }
+.convo-row svg { flex: 0 0 auto; }
+.bubble-mo { background: #FFF1E8; color: #2B1A12; border-radius: 18px 18px 18px 4px; padding: 14px 16px; font-size: 15px; line-height: 1.45; box-shadow: 0 6px 16px rgba(0,0,0,0.3); transform: rotate(-1deg); transition: transform 300ms ease; }
+.bubble-me { align-self: flex-end; background: #F26B3A; color: #2B1A12; border-radius: 18px 18px 4px 18px; padding: 14px 16px; font-size: 15px; font-weight: 600; box-shadow: 0 6px 16px rgba(0,0,0,0.3); transform: rotate(1deg); transition: transform 300ms ease; }
+.bubble-card { margin-left: 42px; background: #FFF1E8; color: #2B1A12; border-radius: 16px; padding: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.35); transform: rotate(-0.5deg); transition: transform 300ms ease; }
+.bubble-card-k { font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #B8461F; }
+.bubble-card p { margin: 8px 0 0; font-size: 14px; line-height: 1.45; }
+.tile--lift:hover .bubble-mo, .tile--lift:hover .bubble-me, .tile--lift:hover .bubble-card { transform: rotate(0deg); }
+.convo--lg .bubble-mo, .convo--lg .bubble-me { font-size: 16px; }
