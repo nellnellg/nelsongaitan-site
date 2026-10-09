@@ -239,3 +239,4 @@ a.tile { display: block; text-decoration: none; color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+.keys-2 .key--big { padding: 14px 10px; font-size: 14px; white-space: nowrap; }
