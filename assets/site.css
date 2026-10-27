@@ -241,28 +241,27 @@ a.tile { display: block; text-decoration: none; color: var(--ink); }
 }
 .keys-2 .key--big { padding: 14px 10px; font-size: 14px; white-space: nowrap; }
 
-/* Mo brand surfaces: espresso, sunrise orange, warm cream */
-.tile--mo { background: #2B1A12; color: #FFF1E8; box-shadow: inset 0 1px 0 rgba(255,241,232,0.08), 0 1px 1px rgba(0,0,0,0.2), 0 10px 24px rgba(43,26,18,0.28); }
-.tile--mo.tile--lift:hover { box-shadow: inset 0 1px 0 rgba(255,241,232,0.08), 0 2px 3px rgba(0,0,0,0.25), 0 24px 44px rgba(43,26,18,0.36); }
-.tile--mo .tag { background: #45291C; color: #FFF1E8; box-shadow: inset 0 1px 2px rgba(0,0,0,0.3); }
-.tile--mo .grille { background-color: #3A2418; background-image: radial-gradient(#1C0F09 2px, transparent 2.5px); }
-.tile--mo .phone { box-shadow: inset 0 0 0 2px #4A2E20, 0 24px 48px rgba(20,8,2,0.6); }
-.tile--mo .arrow-key { background: #F26B3A; border-color: #C24E22; color: #2B1A12; box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 3px 0 #C24E22; }
-.label--mo { color: #F26B3A; }
-.on-mo { color: #FFF1E8; }
-.on-mo-muted { color: #E8CDBB; }
-.key--mo { background: #F26B3A; color: #2B1A12; border-color: #C24E22; box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 4px 0 #C24E22, 0 8px 14px rgba(0,0,0,0.2); }
-.key--mo:hover { color: #2B1A12; }
-.key--mo:active { box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 0 #C24E22; }
+/* Mo brand surfaces: cream, cobalt, red orange (1970s runner) */
+.tile--mo { background: #F6F1E8; color: #12286B; box-shadow: inset 0 1px 0 #FFFFFF, inset 0 -6px 0 #DC440D, 0 1px 1px rgba(0,0,0,0.08), 0 10px 24px rgba(18,40,107,0.12); }
+.tile--mo.tile--lift:hover { box-shadow: inset 0 1px 0 #FFFFFF, inset 0 -6px 0 #DC440D, 0 2px 3px rgba(0,0,0,0.1), 0 24px 44px rgba(18,40,107,0.18); }
+.tile--mo .tag { background: #E3EBFE; color: #12286B; box-shadow: none; }
+.tile--mo .arrow-key { background: #DC440D; border-color: #A8320A; color: #FFFFFF; box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 3px 0 #A8320A; }
+.label--mo { color: #C23A0A; }
+.on-mo { color: #1E4FD8; }
+.on-mo-muted { color: #3A4A78; }
+.key--mo { background: #DC440D; color: #FFFFFF; border-color: #A8320A; box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 4px 0 #A8320A, 0 8px 14px rgba(0,0,0,0.12); }
+.key--mo:hover { color: #FFFFFF; }
+.key--mo:active { box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 0 #A8320A; }
 
 /* Mo as a conversation (no device) */
 .convo { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 8px 4px; }
 .convo-row { display: flex; align-items: flex-end; gap: 10px; }
-.convo-row svg { flex: 0 0 auto; }
-.bubble-mo { background: #FFF1E8; color: #2B1A12; border-radius: 18px 18px 18px 4px; padding: 14px 16px; font-size: 15px; line-height: 1.45; box-shadow: 0 6px 16px rgba(0,0,0,0.3); transform: rotate(-1deg); transition: transform 300ms ease; }
-.bubble-me { align-self: flex-end; background: #F26B3A; color: #2B1A12; border-radius: 18px 18px 4px 18px; padding: 14px 16px; font-size: 15px; font-weight: 600; box-shadow: 0 6px 16px rgba(0,0,0,0.3); transform: rotate(1deg); transition: transform 300ms ease; }
-.bubble-card { margin-left: 42px; background: #FFF1E8; color: #2B1A12; border-radius: 16px; padding: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.35); transform: rotate(-0.5deg); transition: transform 300ms ease; }
-.bubble-card-k { font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #B8461F; }
+.convo-row svg, .mo-avatar { flex: 0 0 auto; }
+.mo-avatar { width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 0 0 2px #FFFFFF, 0 4px 10px rgba(18,40,107,0.2); }
+.bubble-mo { background: #FFFFFF; color: #12286B; border-radius: 18px 18px 18px 4px; padding: 14px 16px; font-size: 15px; line-height: 1.45; box-shadow: 0 6px 16px rgba(18,40,107,0.14); transform: rotate(-1deg); transition: transform 300ms ease; }
+.bubble-me { align-self: flex-end; background: #2869F5; color: #FFFFFF; border-radius: 18px 18px 4px 18px; padding: 14px 16px; font-size: 15px; font-weight: 600; box-shadow: 0 6px 16px rgba(18,40,107,0.2); transform: rotate(1deg); transition: transform 300ms ease; }
+.bubble-card { margin-left: 50px; background: #FFFFFF; color: #12286B; border-radius: 16px; padding: 16px; box-shadow: 0 8px 20px rgba(18,40,107,0.14); transform: rotate(-0.5deg); transition: transform 300ms ease; }
+.bubble-card-k { font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #C23A0A; }
 .bubble-card p { margin: 8px 0 0; font-size: 14px; line-height: 1.45; }
 .tile--lift:hover .bubble-mo, .tile--lift:hover .bubble-me, .tile--lift:hover .bubble-card { transform: rotate(0deg); }
 .convo--lg .bubble-mo, .convo--lg .bubble-me { font-size: 16px; }
@@ -272,3 +271,16 @@ a.tile.stack { display: flex; }
 /* Header monogram */
 .monogram { width: 42px; height: 42px; border-radius: 12px; background: var(--charcoal); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 14px; font-weight: 700; letter-spacing: 0.02em; flex: 0 0 auto; box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 3px 0 #111110, 0 5px 10px rgba(0,0,0,0.15); transition: transform 80ms ease, box-shadow 80ms ease; }
 .brand:active .monogram { transform: translateY(2px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 1px 0 #111110; }
+
+/* Mo brand section */
+.mo-logo { display: block; width: 100%; max-width: 420px; height: auto; border-radius: 14px; }
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.swatch { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 6px 10px 6px 6px; background: var(--recess); border-radius: 8px; }
+.swatch i { width: 22px; height: 22px; border-radius: 6px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08); }
+.scenes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.scene { margin: 0; background: #F6F1E8; border-radius: 14px; overflow: hidden; }
+.scene img { display: block; width: 100%; height: auto; }
+.scene figcaption { padding: 10px 12px 12px; font-size: 13px; line-height: 1.4; color: #12286B; }
+.scene figcaption b { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #C23A0A; margin-bottom: 4px; }
+.mo-hero-img { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto; }
+@media (max-width: 860px) { .scenes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
