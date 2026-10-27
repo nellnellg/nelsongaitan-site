@@ -277,10 +277,10 @@ a.tile.stack { display: flex; }
 .swatches { display: flex; flex-wrap: wrap; gap: 10px; }
 .swatch { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 6px 10px 6px 6px; background: var(--recess); border-radius: 8px; }
 .swatch i { width: 22px; height: 22px; border-radius: 6px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08); }
-.scenes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.scenes { flex: 1 1 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 8px; }
 .scene { margin: 0; background: #F6F1E8; border-radius: 14px; overflow: hidden; }
 .scene img { display: block; width: 100%; height: auto; }
-.scene figcaption { padding: 14px 18px 18px; font-size: 15px; line-height: 1.4; color: #12286B; }
-.scene figcaption b { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #C23A0A; margin-bottom: 4px; }
+.scene figcaption { padding: 12px 14px 14px; font-size: 14px; line-height: 1.4; color: #12286B; }
+.scene-k { display: block; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C23A0A; margin-bottom: 4px; }
 .mo-hero-img { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto; }
-@media (max-width: 560px) { .scenes { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { .scenes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
