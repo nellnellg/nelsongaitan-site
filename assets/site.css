@@ -257,10 +257,10 @@ a.tile { display: block; text-decoration: none; color: var(--ink); }
 .convo { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 8px 4px; }
 .convo-row { display: flex; align-items: flex-end; gap: 10px; }
 .convo-row svg, .mo-avatar { flex: 0 0 auto; }
-.mo-avatar { width: 44px; height: 62px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(18,40,107,0.18)); }
+.mo-avatar { width: 52px; height: 52px; border-radius: 50%; box-shadow: 0 4px 10px rgba(18,40,107,0.16); }
 .bubble-mo { background: #FFFFFF; color: #12286B; border-radius: 18px 18px 18px 4px; padding: 14px 16px; font-size: 15px; line-height: 1.45; box-shadow: 0 6px 16px rgba(18,40,107,0.14); transform: rotate(-1deg); transition: transform 300ms ease; }
 .bubble-me { align-self: flex-end; background: #2869F5; color: #FFFFFF; border-radius: 18px 18px 4px 18px; padding: 14px 16px; font-size: 15px; font-weight: 600; box-shadow: 0 6px 16px rgba(18,40,107,0.2); transform: rotate(1deg); transition: transform 300ms ease; }
-.bubble-card { margin-left: 50px; background: #FFFFFF; color: #12286B; border-radius: 16px; padding: 16px; box-shadow: 0 8px 20px rgba(18,40,107,0.14); transform: rotate(-0.5deg); transition: transform 300ms ease; }
+.bubble-card { margin-left: 62px; background: #FFFFFF; color: #12286B; border-radius: 16px; padding: 16px; box-shadow: 0 8px 20px rgba(18,40,107,0.14); transform: rotate(-0.5deg); transition: transform 300ms ease; }
 .bubble-card-k { font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #C23A0A; }
 .bubble-card p { margin: 8px 0 0; font-size: 14px; line-height: 1.45; }
 .tile--lift:hover .bubble-mo, .tile--lift:hover .bubble-me, .tile--lift:hover .bubble-card { transform: rotate(0deg); }
