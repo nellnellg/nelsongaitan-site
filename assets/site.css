@@ -295,3 +295,46 @@ a.tile.stack { display: flex; }
 a.followkind-home { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center; }
 .followkind-home .browser { max-height:430px; overflow:hidden; }
 @media(max-width:700px) { .followkind-home { grid-template-columns:1fr; gap:24px; } .followkind-links .key { white-space:normal; } }
+
+/* Embedded Followkind sample walkthrough */
+.fk-demo { --fk-plum:#654568; --fk-ink:#392d3e; background:#faf7f5; color:var(--fk-ink); }
+.fk-demo-heading { display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:18px; }
+.fk-demo-heading h2 { margin-top:12px; }
+.fk-demo-badge { display:inline-block; border:1px solid #ded2df; border-radius:999px; padding:7px 12px; background:#f1e9f1; font-size:12px; font-weight:600; }
+.fk-steps { list-style:none; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:28px 0 18px; padding:0; }
+.fk-steps li { padding:12px; border-radius:10px; border:1px solid #dfd9dd; color:#726774; font-size:13px; font-weight:600; }
+.fk-steps li[aria-current] { background:var(--fk-plum); color:#fff; border-color:var(--fk-plum); }
+.fk-steps .fk-done { background:#eee7ee; color:var(--fk-ink); }
+.fk-stage { background:#fff; border:1px solid #e4dce3; border-radius:18px; padding:clamp(20px,4vw,38px); }
+.fk-stage [hidden],.fk-demo [hidden] { display:none !important; }
+.fk-role { color:var(--fk-plum); font-family:var(--mono); font-size:11px; letter-spacing:.06em; line-height:1.6; }
+.fk-stage h3 { font-size:clamp(24px,3vw,32px); letter-spacing:-.025em; line-height:1.15; margin:16px 0; }
+.fk-stage h3:focus { outline:none; }
+.fk-stage h4 { font-size:22px; line-height:1.2; margin:16px 0 10px; }
+.fk-stage p { line-height:1.6; }
+.fk-stage form { margin-top:24px; }
+.fk-fields,.fk-result-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.fk-stage label { display:block; font-size:14px; font-weight:600; margin-bottom:20px; }
+.fk-stage input,.fk-stage textarea,.fk-stage select { box-sizing:border-box; display:block; width:100%; padding:13px 14px; margin-top:8px; background:#fff; border:1px solid #cec2ce; border-radius:9px; color:var(--fk-ink); font:inherit; font-weight:400; line-height:1.5; }
+.fk-stage textarea { resize:vertical; }
+.fk-stage small { display:block; color:#746776; font-size:12px; line-height:1.5; margin-top:7px; font-weight:400; }
+.fk-button { display:inline-block; cursor:pointer; border:1px solid var(--fk-plum); border-radius:10px; background:var(--fk-plum); color:#fff; font:inherit; font-size:14px; font-weight:600; line-height:1.4; padding:13px 18px; text-align:left; }
+.fk-button:hover { background:#503653; }
+.fk-back { cursor:pointer; background:transparent; border:0; color:var(--fk-plum); font:inherit; font-size:13px; padding:12px; text-decoration:underline; text-underline-offset:4px; }
+.fk-stage :is(input,select,textarea,button):focus-visible,.fk-back:focus-visible { outline:3px solid #c58863; outline-offset:3px; }
+.fk-source { padding:18px 22px; background:#f7f4f6; border-radius:12px; margin:22px 0; }
+.fk-source>span,.fk-report>span { font-family:var(--mono); font-size:11px; letter-spacing:.04em; }
+.fk-source p { margin-bottom:0; }
+.fk-suggestion { background:#fbede5; padding:22px; border-radius:12px; margin-bottom:22px; }
+.fk-suggestion blockquote { border-left:3px solid var(--fk-plum); margin:18px 0; padding:0 0 0 16px; line-height:1.6; }
+.fk-suggestion p { font-size:13px; margin-bottom:0; }
+.fk-request,.fk-report { border:1px solid #e4dce3; border-radius:12px; padding:22px; margin-top:12px; }
+.fk-report { background:#f7f4f6; }
+.fk-report strong { display:block; font-size:40px; letter-spacing:-.03em; margin-top:24px; color:var(--fk-plum); }
+.fk-resolved { background:#e9f2e6; border-color:#c3d7ba; color:#365631; }
+.fk-feedback { background:#f1e9f1; border-radius:10px; padding:16px; }
+.fk-demo-footer { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:14px; }
+.fk-demo-footer p { font-size:12px; line-height:1.5; color:#746776; }
+@media(max-width:700px) { .fk-fields,.fk-result-grid { grid-template-columns:1fr; gap:0; } .fk-steps li { padding:10px 8px; font-size:11px; } .fk-demo-footer { align-items:start; } .fk-demo-footer button { flex-shrink:0; } }
+
+.fk-event-photo { display:block; width:100%; height:auto; border-radius:14px; }
