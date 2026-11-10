@@ -353,3 +353,13 @@ a.followkind-home { display:grid; grid-template-columns:1fr 1fr; gap:36px; align
 .fk-solution-row figcaption { font-size:12px; line-height:1.5; color:var(--muted); margin-top:12px; }
 .fk-solution-form figure { max-width:300px; justify-self:center; }
 @media(max-width:700px) { .fk-solution-row { grid-template-columns:1fr; gap:20px; padding:28px 0; } .fk-solution-form figure { max-width:280px; } }
+
+/* Compact, continuous Followkind story. */
+.fk-story > .h2 { margin:14px 0 20px; max-width:850px; }
+.fk-story > .body { max-width:860px; }
+.fk-context { font-size:13px; line-height:1.65; color:var(--muted); max-width:860px; margin:20px 0 0; }
+.fk-phone-preview { height:420px; overflow-y:auto; overscroll-behavior:contain; border:1px solid #d5c8d5; border-radius:18px; background:#fff; box-shadow:0 8px 24px rgba(65,45,68,.08); scrollbar-color:#9b839d #f1e9f1; }
+.fk-solution-form .fk-phone-preview img { border:0; border-radius:0; box-shadow:none; }
+.fk-phone-preview:focus-visible { outline:3px solid #c58863; outline-offset:4px; }
+.fk-outcome-photo { margin:30px 0 24px; }
+@media(max-width:700px) { .fk-phone-preview { height:360px; } }
