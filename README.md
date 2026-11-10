@@ -4,7 +4,7 @@ Portfolio site for Nelson Gaitan, product designer in Miami. Plain HTML, CSS and
 
 ## Pages
 - `index.html` home
-- `work/guest-hub.html`, `work/linked-events.html`, `work/mo.html` case studies
+- `work/guest-hub.html`, `work/linked-events.html`, `work/mo.html`, `work/followkind.html` case studies
 - `about.html`
 - `brain-grace.html`
 

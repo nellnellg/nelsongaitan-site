@@ -284,3 +284,14 @@ a.tile.stack { display: flex; }
 .scene-k { display: block; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C23A0A; margin-bottom: 4px; }
 .mo-hero-img { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto; }
 @media (max-width: 860px) { .scenes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Followkind case study uses the portfolio's shared tiles and type. */
+.tile--followkind { background:#f5eae6; color:#48344f; }
+.tile--followkind .label { color:#654568; }
+.tile--followkind .tag { background:#fff8f3; color:#48344f; }
+.followkind-links,.followkind-statuses { display:flex; align-items:center; flex-wrap:wrap; gap:12px; }
+.followkind-figure { margin:0; }
+.followkind-figure figcaption { margin-top:16px; color:var(--muted); font-size:14px; line-height:1.6; max-width:780px; }
+a.followkind-home { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center; }
+.followkind-home .browser { max-height:430px; overflow:hidden; }
+@media(max-width:700px) { .followkind-home { grid-template-columns:1fr; gap:24px; } .followkind-links .key { white-space:normal; } }
